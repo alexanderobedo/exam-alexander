@@ -1,0 +1,37 @@
+.header {
+	padding: 17px 0;
+
+	.logo {
+		margin-top: 10px;
+	}
+
+	.logo-desc {
+		margin: 38px 0 0 12px;
+
+		p {
+			text-transform: uppercase;
+			font-family: @gotham-bold;
+			color: @blue;
+			font-size: 15px;
+		}
+	}
+
+	.header-list {
+		ul {
+			li {
+				display: block;
+				position: relative;
+				padding-left: 22px;
+				font-family: @gotham-medium;
+
+				&:before {
+					content: "\f00c";
+					font-family: 'FontAwesome';
+					position: absolute;
+					left: 0;
+					color: #3e9d03;
+				}
+			}
+		}
+	}
+}

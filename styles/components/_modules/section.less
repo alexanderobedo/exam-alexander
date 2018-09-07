@@ -1,0 +1,197 @@
+.section-content {
+	position: relative;
+	padding: 12px 0 46px;
+	background-color: @blue;
+	/*background: -moz-radial-gradient(center, ellipse cover, #1479b7 0%, #032c6b 100%); 
+	background: -webkit-radial-gradient(center, ellipse cover, #1479b7 0%,#032c6b 100%);
+	background: radial-gradient(ellipse at center, #1479b7 0%,#032c6b 100%);*/
+
+	&:before {
+		position: absolute;
+		content: '';
+		background-image: url('../images/glow2.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	h1 {
+		font-family: @gotham-light;
+		font-size: 42px;
+		color: @white;
+		line-height: 43px;
+
+		span {
+			display: block;
+			font-family: @gotham-medium;
+			font-size: 30px;
+		}
+	}
+
+	.content-left {
+		width: 50%;
+
+		form {
+			margin-top: 30px;
+
+			.autocomplete {
+				position: relative;
+			}
+
+			.autocomplete-items {
+			  position: absolute;
+			  border: 1px solid #d4d4d4;
+			  border-bottom: none;
+			  border-top: none;
+			  z-index: 99;
+			  /*position the autocomplete items to be the same width as the container:*/
+			  top: 100%;
+			  left: 0;
+			  right: 0;
+			}
+
+			.autocomplete-items div {
+			  padding: 10px;
+			  cursor: pointer;
+			  background-color: #fff; 
+			  border-bottom: 1px solid #d4d4d4; 
+			}
+
+			.form-group {
+				font-family: @gotham-medium;
+				position: relative;
+
+				label {
+					font-size: 18px;
+					color: @white;
+				}
+
+				img {
+					position: absolute;
+					top: 55px;
+    			left: 15px;
+				}
+
+				input, select {
+					font-size: 14px;
+					height: 65px;
+					border-radius: 40px;
+					margin-top: 8px;
+					padding-left: 65px;
+				}
+
+				select {
+					width: 100%;
+					outline: 0;
+					color: #999999;
+				}
+
+			}
+
+			p {
+				font-family: @gotham-book;
+				font-size: 18px;
+				text-align: center;
+				color: @white;
+
+				a {
+					&:hover {
+						text-decoration: underline;
+						color: @white;
+					}
+				}
+			}
+		}
+	}
+
+	.content-right {
+		width: 40%;
+		color: @white;
+
+		.client-reviews {
+			h3 {
+				font-size: 20px;
+			}
+
+			.clients-list {
+				position: relative;
+				margin-top: 23px;
+
+				&:last-child {
+					&:after {
+						display: none;
+					}
+				}
+
+				&:after {
+					content: '';
+					background-color: #fff;
+					height: 1px;
+					width: 100%;
+			    opacity: .26;
+				}
+
+				.clients-details {
+					text-align: center;
+					max-width: 91px;
+
+					img {
+						border: 1px solid #1c7abd;
+						border-radius: 50%;
+					}
+
+					.client-name {
+						font-family: @gotham-medium;
+						font-size: 14px;
+					}
+					.client-address {
+						font-size: 12px;
+				    margin-top: -18px;
+					}
+				}
+
+				.clients-feedback {
+			    max-width: 400px;
+			    margin-left: 110px;
+			    position: relative;
+
+			    .rating {
+						position: absolute;
+						top: -9px;
+						left: 95px;
+			    }
+
+			    h5 {
+			    	font-family: @gotham-medium;
+			    	font-size: 13px;
+			    }
+
+			    p {
+			    	font-size: 11px;
+			    	font-family: @gotham-italic;
+			    	line-height: 21px;
+			    }
+
+			    a {
+			    	color: #fbd243;
+			    	font-size: 12px;
+			    	font-family: @gotham-medium;
+			    	float: right;
+			    	position: relative;
+			    	padding-right: 16px;
+
+			    	&:after{
+			    		content: url('../images/book.png');
+	    		    margin-left: 6px;
+			    	}
+			    }
+				}
+			}
+		}
+	}
+
+}
+
